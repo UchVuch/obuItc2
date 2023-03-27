@@ -1,0 +1,262 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    padding-inline: 80px;
+}
+
+.visually-hidden {
+    position: fixed;
+    transform: scale(0);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.body {
+    font-family: "Oswald", sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 30px;
+    color: #000000;
+    display: flex;
+    flex-direction: column;
+    max-height: 100vh;
+    height: 100vh;
+}
+
+.main {
+    flex: 1 1 auto;
+}
+
+
+.section {
+    padding-block: 60px;
+}
+
+.title {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 53px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+    margin-bottom: 60px;
+}
+
+/*header*/
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    padding-block: 29px 28px;
+}
+
+.logo {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 53px;
+    text-transform: uppercase;
+    color: #000000;
+    opacity: 0.2;
+}
+
+.nav__list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    column-gap: 46px;
+    row-gap: 20px;
+}
+
+.nav__link {
+    font-size: 24px;
+    line-height: 36px;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.nav__link:hover {
+    text-decoration: underline;
+}
+
+/*hero*/
+.hero {
+    position: relative;
+    min-height: 622px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(./images/home.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+}
+.hero__title {
+    position: relative;
+    text-align: center;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 89px;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+.hero__title::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -22px;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 10px;
+    background: #817070;
+}
+
+/*story*/
+.story__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.story__text {
+    max-width: 597px;
+    margin-inline: 10px 43px;
+}
+
+/*blog*/
+.blog {
+    background-color: #efefef;
+}
+.blog__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-items: flex-start;
+    column-gap: 70px;
+    row-gap: 25px;
+    padding-inline: 22px 23px;
+}
+.blog__item {
+    max-width: 365px;
+}
+.post {
+    background-color: #ffffff;
+    padding: 20px 20px 46px 20px;
+}
+.post__title {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 24px;
+}
+.post__image {
+    margin-bottom: 24px;
+}
+.post__text {
+    font-size: 18px;
+    line-height: 27px;
+}
+
+/*subscribe*/
+.subscribe {
+    background-color: #817070;
+    display: flex;
+    justify-content: center;
+}
+.subscribe__form {
+    display: flex;
+    flex-direction: column;
+}
+.subscribe__title {
+    color: #ffffff;
+    margin-bottom: 28px;
+}
+.subscribe__input {
+    width: 300px;
+    border: 3px solid #ffffff;
+    background-color: #817070;
+    padding-block: 9px 12px;
+    margin-bottom: 28px;
+}
+.subscribe__input,
+.subscribe__input::placeholder {
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    color: #ffffff;
+}
+.subscribe__button {
+    font-family: "Oswald", sans-serif;
+    cursor: pointer;
+    border: 3px solid transparent;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #817070;
+    background-color: #ffffff;
+    padding: 13px 24px 12px;
+}
+.subscribe__button:hover {
+    border: 3px solid #ffffff;
+    color: #ffffff;
+    background-color: #817070;
+}
+
+/*footer*/
+.footer {
+    padding-block: 28px 14px;
+}
+.footer__text {
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    text-transform: uppercase;
+}
